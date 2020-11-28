@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SRC New Employee</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		window.onload = function(){
+			defaultDate()
+		};
+		function defaultDate() {
+			var theDateTime = new Date();
+			document.getElementById("datetime").innerHTML = theDateTime.toLocaleString();
+		}
+	</script>
+  </head>
+  <body>
+    <div class="theForm">
+      <form action="">
+        <div class="banner">
+          <h1>Add New Employee Login</h1>
+        </div>
+		<!-- Navigation -->
+		<ul class="w3-bar w3-black">
+		  <li><a href="homepage.html">Home</a></li>
+		  <li><a href="membership.html">Add Member</a></li>
+		  <li><a href="deleteMember.html">Delete Member</a></li>
+		  <li><a href="locker.html">Locker</a></li>
+		  <li><a href="usage.html">Machine Usage</a></li>
+		  <li><a href="newEmployee.html">New Employee</a></li>
+		  <li><a href="maintenance.html">Maintenance</a></li>
+		  <li><a href="social.html">Social Media</a></li>
+		</ul>
+		<div class="item">
+			<p>Date/Time: <span id="datetime"></span></p>
+		</div>
+        <div class="item">
+          <p>Name<span class="required">*</span></p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" required/>
+            <input type="text" name="name" placeholder="Last" required/>
+          </div>
+		  <div>
+			<p>Date of Birth<span class="required">*</span></p>
+			<div class="question-answer">
+				<input type="text" name="dob" placeholder="DoB" />
+			</div>
+		</div>
+		  <p>Student ID (if applicable)</p>
+		  <div class="id-item">
+			<input type="text" name="id" placeholder="ID" />
+		  </div>
+        </div>
+        <div class="question">
+          <p>Gender<span class="required">*</span></p>
+          <div class="question-answer">
+            <label><input type="radio" value="none" name="gender" required/> <span>Male</span></label>
+            <label><input type="radio" value="none" name="gender" required/> <span>Female</span></label>
+          </div>
+        </div>
+        <div class="item">
+          <p>Home Address<span class="required">*</span></p>
+          <input type="text" name="name" placeholder="Street address" required/>
+          <div class="city-item">
+            <input type="text" name="name" placeholder="City" required/>
+            <input type="text" name="name" placeholder="State" required/>
+            <input type="text" name="name" placeholder="Zip" required/>
+          </div>
+        </div>
+        <div class="item">
+          <p>Email<span class="required">*</span></p>
+          <input type="email" name="name" required/>
+        </div>
+        <div class="item">
+          <p>Phone<span class="required">*</span></p>
+          <input type="tel" name="name" required/>
+        </div>
+        <div class="item">
+			<p>Username<span class="required">*</span></p>
+			<input type="text" name="username" required />
+		</div>
+        <div class="item">
+			<p>Password<span class="required">*</span></p>
+			<input type="password" name="password" required />
+		</div>
+        <div class="item">
+			<p>Confirm Password<span class="required">*</span></p>
+			<input type="password" name="password2" required />
+		</div>
+		
+        <div class="btn-block">
+          <button type="submit" href="/">Create Employee Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
